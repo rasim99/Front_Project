@@ -221,11 +221,7 @@ position: relative;
  .navbar .container .row .col-2 .all-categories:hover{
     cursor: pointer;
  }
- .navbar .container .row .col-10 ul{
-    position: relative;  
-    top: 8px;
-    left: 170px;
-  }
+
  .navbar .container .row .col-10 ul li{
    list-style: none;
    padding: 17px;
@@ -253,5 +249,86 @@ position: relative;
   #home-sub-menu:hover .sub-menu{
     opacity: 1;
   }
+  .navbar .container .row .col-10 ul{
+    position: relative;  
+    top: 8px;
+    left: 170px;
+  }
+#shop-ul{
+    position: absolute;
+    width: 90%;
+    top: 60px;
+    left: -310px;
+    background-color: white;
+    border-bottom: solid;
+    z-index: 1;
+    opacity: 0;
+}
+#shop-ul li{
+    margin-right: 25px;
+}
 
+.lists-ul{
+    font-size: 14px;
+    margin-left: -245px;
+}
   
+.prodetail{
+    font-size: 14px;
+    margin-left: -195px;
+}
+
+.protype{
+    font-size: 14px;
+    margin-left: -170px;
+}
+.shoppages{
+    font-size: 14px;
+    margin-left: -180px;
+}
+.shoplay{
+    font-size: 14px;
+    margin-left: -175px;
+}
+
+
+/* tekrar baxmaq opacity problemli
+#li-shop-ul :hover #shop-ul{
+opacity: 1;
+} */
+
+.items-beverages-image{
+   border: none;
+}
+.top-items .container .col-4{
+    border-right: 1px solid;
+ 
+}
+.top-items .container .col-8 .col-2{
+    border-right: 1px solid;
+   height: 140px;
+
+}
+.top-items .container .col-8 .col-2 img{
+    border-right: 1px solid;
+  width: 100px;
+}
+#bave{
+    border: 1px outset;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+#frozen{
+    border-top-right-radius: 5px;
+}
+#meats-radius{
+    border-bottom-right-radius: 5px;
+}
+
+.container .row .col-9 .col-3{
+    border-right: 1px outset;
+    border-top: 1px outset;
+    border-bottom: 1px outset;
+  height: 150px;
+}
