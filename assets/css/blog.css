@@ -1,0 +1,109 @@
+.blog-prod .blog-prod-img img{
+    border-radius: 7px;
+}
+.t-hover{
+    color: black;
+    text-decoration: none;
+}
+.t-hover:hover{
+    text-decoration: underline;
+      color: black;
+}
+.blog-icons{
+    margin-bottom: 100px;
+}
+.click{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.click-1{
+    background-color: rgb(21, 154, 237);
+    color: white;
+}
+.cl:hover{
+    cursor: pointer;
+    background-color: silver;
+}
+.form-div{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #f3f4f7;
+    margin-left: 50px;
+}
+.form-div input{
+    width: 75%;
+    margin-top: 7px;
+    margin-left: 20px;
+    outline: none;
+    border-style: none;
+    background-color: #f3f4f7;
+}
+.popularty-posts{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.popular-posts{
+    border: .3px inset;
+    border-radius: 5px;
+    margin-top: 30px;
+    
+    width: 95%;
+    background-color:#fff;
+}
+.post-img img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.post-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(21, 154, 237);
+    color: #f3f4f7;
+    position: relative;
+    bottom: 70px;
+    left: 75px;
+
+}
+.social-media{
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.social-btn{
+    width: 96%;
+}
+.btn-cyan{
+    background-color: rgb(21, 154, 237);
+    
+}
+.btn-darkcyan{
+    background-color: #0077b5;
+}
+.btn-orange{
+    background-color: orangered;
+}
+.widget{
+    margin-left: 50px;
+    margin-top: 60px;
+}
+.tags{
+    margin-left: 50px;
+    margin-top: 60px;
+}
+.tags a{
+    color: black;
+  padding: 5px;
+     text-decoration: none;
+    border: 3px solid whitesmoke;
+}
