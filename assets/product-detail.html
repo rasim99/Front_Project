@@ -1,0 +1,934 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/prdouct-detail.css">
+    <title>Product-Detail</title>
+</head>
+
+<body>
+    <header>
+        <div class="hedaer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="d-flex ls-no">
+                            <li>About US</li>
+                            <li>My account</li>
+                            <li>Wishlist</li>
+                            <li>Order Tracking</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 d-flex">
+                        <div class="col-4">
+                            <div class="icon-hand">
+                                <i class="fa-regular fa-hand"></i>
+                                <span>100% Secure delivery without</span>
+                            </div>
+
+                        </div>
+                        <div class="col-4">
+                            <div class="text-context">
+
+                                Need help? Call Us: <a href="">+0020 500</a>
+                            </div>
+                        </div>
+                        <div class="col-4 d-flex">
+                            <div class="langs">
+                                <span class="english">English <i class="fa-solid fa-chevron-down"></i></span>
+                                <div class="langs-content">
+                                    <ul class="ls-no o-x">
+                                        <li>English</li>
+                                        <li>Spanish</li>
+                                        <li>German</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="current">
+                                <span>USD <i class="fa-solid fa-chevron-down"></i></span>
+                                <div class="valutes">
+                                    <ul class="ls-no o-x">
+                                        <li>USD</li>
+                                        <li>INR</li>
+                                        <li>GPB</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="container mt-5 d-flex">
+                <div class="col-2 ">
+                    <div class="bacola-img">
+                        <img src="./images/Screenshot 2023-03-26 183842.png" alt="">
+                    </div>
+
+                </div>
+                <div class="col-2">
+                    <div class="location">
+                        <div class="location-content">
+                            <span>Your Location</span>
+                            <div class="location-actived text-dark fw-bold">
+                                <span>Choose Your Location</span> <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="sub-search">
+                        <div class="sub-search-content d-flex">
+                            <input type="search" placeholder="   Search for products...">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LOGIN -->
+                <div class="col-2">
+                    <div class="login-user">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <!-- BASKET -->
+                    <div class="basket-content">
+                        <span>$0.00</span>
+
+                        <div class="basket-bag">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <div class="sup-div">
+                                <sup>0</sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+    <nav>
+        <div class="navbar">
+            <div class="container">
+                <div class="row">
+                    <!-- nav-left -->
+                    <div class="col-2">
+                        <div class="all-categories rounded-pill">
+                            <i class="fa-solid fa-bars"></i>
+                            <span>ALL CATEGORIES</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <!-- nav-right -->
+                    <div class="col-10">
+                        <ul class="menu d-flex">
+                            <li id="home-sub-menu">
+                                <a href="#">HOME <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul id="sub-menu">
+                                    <li><a href="">Home1</a></li>
+                                    <li><a href="">Home2</a></li>
+                                    <li><a href="">Home3</a></li>
+                                    <li><a href="">Home4</a></li>
+                                    <li><a href="">Home5</a></li>
+                                </ul>
+                            </li>
+                            <li id="li-shop-ul">
+                                <a href="#">SHOP <i class="fa-solid fa-chevron-down"></i> </a>
+                                <ul id="shop-ul" class="d-flex">
+                                    <li>
+                                        <a class="text-primary" href="#">Shop Lists</a>
+                                        <ul class="lists-ul">
+                                            <li><a href="#">Shop Default</a></li>
+                                            <li><a href="#">Shop Right Sidebar</a></li>
+                                            <li><a href="#">Shop Wide</a></li>
+                                            <li><a href="#">Lis Left Sidebar</a></li>
+                                            <li><a href="#">Load More Button</a></li>
+                                            <li><a href="#">Infinite Scrolling</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a class="text-primary" href="#">Product Detail</a>
+                                        <ul class="prodetail">
+                                            <li><a href="#">Product Default</a></li>
+                                            <li><a href="#">Product Variable</a></li>
+                                            <li><a href="#">Product Grouped</a></li>
+                                            <li><a href="#">Product External</a></li>
+                                            <li><a href="#">Product Downloadable</a></li>
+                                            <li><a href="#">Product With Video</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a class="text-primary" href="">Product Types</a>
+                                        <ul class="protype">
+                                            <li><a href="#">Single Type 1</a></li>
+                                            <li><a href="#">Single Type 2</a></li>
+                                            <li><a href="#">Single Type 3</a></li>
+                                            <li><a href="#">Single Type 4</a></li>
+                                            <li><a href="#">Thumbnails Left</a></li>
+                                            <li><a href="#">Zoom Image</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a class="text-primary" href="#">Shop Pages</a>
+                                        <ul class="shoppages">
+                                            <li><a href="#">Cart</a></li>
+                                            <li><a href="#">Checkout</a></li>
+                                            <li><a href="#">My Account</a></li>
+                                            <li><a href="#">Wishlist</a></li>
+                                            <li><a href="#">Order Tracking</a></li>
+                                            <li><a href="#">Order On WhatsApp</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a class="text-primary" href="#">Shop Layouts</a>
+                                        <ul class="shoplay">
+                                            <li><a href="#">Two Columns</a></li>
+                                            <li><a href="#">Three Columns</a></li>
+                                            <li><a href="#">Three Columns Wide </a></li>
+                                            <li><a href="#">Four Columns</a></li>
+                                            <li><a href="#">Four Columns Wide </a></li>
+                                            <li><a href="#">Five Columns Wide</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-drumstick-bite"></i> MEATS &SEA FOODS</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-cookie-bite"></i> BAKERY</a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fa-solid fa-mug-hot"></i> BEVERAGES</a>
+                            </li>
+                            <li>
+                                <a href="#">BLOG</a>
+                            </li>
+                            <li>
+                                <a href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="pro-detail-body">
+            <div class="page-header">
+                <div class="container ">
+                    <div class="row justify-content-between">
+                        <div class="col-6 mt-4">
+                            <ul class="d-flex relative-left">
+                                <li> <a href=""> HOME </a> <i class="fa-solid fa-chevron-right"></i></li>
+                                <li> <a href="">MEATS & SEAFOOD </a><i class="fa-solid fa-chevron-right"></i> </li>
+                                <li><span class="text-muted">ALL NATURAL ITALIAN-STYLE CHICKEN MEATBALLS</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 mt-4">
+                            <ul class="d-flex ul-left">
+                                <li>
+                                    <a href=""><i class="fa-solid fa-chevron-left mt-2"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa-solid fa-table-cells-large fs-4"></i></a>
+                                </li>
+                            </ul>
+                            <div class="show-card">
+                                <div class="show-card-img">
+                                    <a href=""> <img src="./images/product-image-60-150x150.jpg" alt=""></a>
+                                </div>
+
+                                <div class="show-card-content">
+                                    <a href="">Angie’s Boomchickapop</a>...
+                                    <div class="show-card-price">
+                                        <span><del class="text-muted">$4.29</del> <b
+                                                class="text-danger">$3.29</b></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="product-container">
+                    <div class="container ">
+                        <div class="product-cont-header p-4">
+                            <h3 class="mt-3">All Natural Italian-Style Chicken Meatballs</h3>
+                            <div class="product-header-rating d-flex">
+                                <div class="brands border-right">
+                                    <span class="text-secondary">Brands <b class="text-dark">Welch's</b> </span>
+                                </div>
+                                <div class="stars ms-2 border-right">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-secondary"></i> 1 REVIEW
+
+                                </div>
+                                <div class="sku ms-4">
+                                    <span class="text-muted">SKU:</span> ZU49VOR
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content  mt-3">
+                        <div class="container">
+                            <div class="row justify-content-between">
+                                <div class="col-4">
+                                    <div class="product-img-discount">
+                                        <div class="prod-img ms-4">
+                                            <img src="./images/product-image-62-768x691.jpg" alt="">
+                                            <div class="product-prices" style="position: relative;">
+                                                <button type="button" class="btn btn-info btn-sm ">23%</button>
+                                                <button type="button"
+                                                    class="btn btn-secondary recom btn-sm d-block mt-1 ">RECOMMENDED</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="product-images d-flex">
+                                        <div class="p-img p-img-bs-1">
+                                            <img src="./images/product-image-62-150x150.jpg" alt="">
+                                        </div>
+
+                                        <div class="p-img p-img-bs-2">
+                                            <img src="./images/product-image2-47-150x150.jpg" alt="">
+                                        </div>
+                                        <div class="p-img p-img-bs-2">
+                                            <img src="./images/product-image3-35-150x150.jpg" alt="">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-4">
+                                    <div class="product-info">
+                                        <div class="pro-inf-desc mb-4">
+                                            <div class="pro-desc-header">
+                                                <span> <del class="text-muted">$9.35</del> <b
+                                                        class="text-danger">$7.25</b></span>
+                                                <button class=" rounded-pill btn btn-sm d-block btn-color-fs ">OUT OF
+                                                    STOCK</button>
+                                                <p>Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus
+                                                    malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent
+                                                </p>
+                                            </div>
+                                            <div class="pro-desc-wish mt-3 d-flex">
+                                                <div class="pro-desc-wish-btn">
+                                                    <button class="rounded-pill btn  border-desc-wish-btn btn-sm"><i
+                                                            class="fa-regular fa-heart"></i> ADD TO WISHLIST</button>
+                                                    <button class="ms-3 rounded-pill btn  btn-sm"> <i
+                                                            class="fa-solid fa-arrow-down-up-across-line text-muted"></i>
+                                                        COMPARE</button>
+                                                </div>
+
+                                            </div>
+                                            <div class="type-life mb-3 mt-3">
+                                                <p><i class="fa-solid fa-check text-success me-2"></i> Type: Organic</p>
+                                                <p><i class="fa-solid fa-check text-success me-2"></i> MFG: Jun 4.2021
+                                                </p>
+                                                <p class=""><i class="fa-solid fa-check text-success me-2"></i> LIFE: 30
+                                                    days</p>
+
+                                            </div>
+                                        </div>
+                                        <p class="text-muted">Category: <a href="" class="cat-a">Meats & Seafood</a></p>
+                                        <p class="text-muted">Tags: <a href="" class="cat-a">chicken</a>,
+                                            <a href="" class="cat-a">natural</a>,
+                                            <a href="" class="cat-a"> organic</a>
+                                        </p>
+
+                                        <div class="pro-info-social d-flex">
+                                            <div class="social-btn fb-icon">
+                                                <a href="" class="text-light"><i
+                                                        class="fa-brands fa-facebook-f"></i></a>
+                                            </div>
+
+                                            <div class="social-btn twit-icon">
+                                                <a href="" class="text-light"><i class="fa-brands fa-twitter"></i></a>
+                                            </div>
+
+                                            <div class="social-btn pint-icon">
+                                                <a href="" class="text-light"><i class="fa-brands fa-pinterest"></i></a>
+
+                                            </div>
+
+                                            <div class="social-btn lkin-icon">
+                                                <a href="" class="text-light"> <i class="fa-brands fa-linkedin"></i></a>
+
+                                            </div>
+
+                                            <div class="social-btn reddit-icon">
+                                                <a href="" class="text-light"><i class="fa-brands fa-reddit"></i></a>
+
+                                            </div>
+
+                                            <div class="social-btn wp-icon">
+                                                <a href="" class="text-light"><i class="fa-brands fa-whatsapp"></i></a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-4">
+                                    <div class="shipping-info">
+                                        <div class="covid-info">
+                                            <button class="btn  btn-covid"><span>Covid-19 Info: We keep
+                                                    delivering.</span></button>
+                                        </div>
+                                        <div class="shipping">
+                                            <div class="shipping-content">
+                                                <div class="icon-text d-flex mt-3">
+                                                    <div class="ship-icon">
+                                                        <i class="fa-solid fa-truck-fast"></i>
+                                                    </div>
+                                                    <span>Free Shipping apply to all orders over $100</span>
+                                                </div>
+                                                <div class="icon-text d-flex mt-3">
+                                                    <div class="ship-icon">
+                                                        <i class="fa-solid fa-box"></i>
+                                                    </div>
+                                                    <span>Guranteed 100% Organic from natural farmas</span>
+                                                </div>
+
+                                                <div class="icon-text d-flex mt-3">
+                                                    <div class="ship-icon">
+                                                        <i class="fa-solid fa-dollar-sign"></i>
+                                                    </div>
+                                                    <span>1 Day Returns if you change your mind</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="prod-description">
+                    <div class="prod-description-header p-5">
+                        <a href="" class="text-decoration-none text-dark "><b>DESCRIPTION</b></a>
+                        <a href="" class="text-decoration-none text-muted ms-4">ADDITIONAL INFORMATION</a>
+                        <a href="" class="text-decoration-none text-muted ms-5">REVIEWS(1)</a>
+                    </div>
+                    <div class="prod-descript-text">
+                        <p>Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui
+                            finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat
+                            ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales
+                            nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia.
+                            Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel,
+                            dignissim a tortor.</p>
+                    </div>
+
+                    <div class="prod-descript-text">
+                        <p>Morbi ut sapien vitae odio accumsan gravida. Morbi vitae erat auctor, eleifend nunc a,
+                            lobortis neque. Praesent aliquam dignissim viverra. Maecenas lacus odio, feugiat eu nunc sit
+                            amet, maximus sagittis dolor. Vivamus nisi sapien, elementum sit amet eros sit amet,
+                            ultricies cursus ipsum. Sed consequat luctus ligula. Curabitur laoreet rhoncus blandit.
+                            Aenean vel diam ut arcu pharetra dignissim ut sed leo. Vivamus faucibus, ipsum in vestibulum
+                            vulputate, lorem orci convallis quam, sit amet consequat nulla felis pharetra lacus. Duis
+                            semper erat mauris, sed egestas purus commodo vel.</p>
+                    </div>
+                </div>
+            </div>
+             
+            <div class="container">
+                <div class="related-cards mt-5">
+                    <div class="related-header ">
+                        <h5>RELATED PRODUCTS</h5>
+                    </div>
+                     
+                    <div class="ds-cards-group  d-flex">
+                        <div class="card" style="width: 60rem; position: relative;">
+                            <div class="product-badges" style="position: absolute;">
+                                <button type="button" class="btn btn-info btn-sm ">25%</button>
+                            </div>
+                            <img src="./images/product-image-12-346x310 (1).jpg" class="card-img-top" alt="...">
+
+                            <div class="product-wish">
+                                <div class="product-circle">
+                                    <i class="fa-solid fa-maximize"></i>
+                                </div>
+
+                                <div class="product-circle mt-1">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <p class="card-text">Fresh Organic Strawberry</p> <br>
+                                </a>
+                                <span class="text-success mb-2 d-block"> <span class="text-muted">0.5kg</span> IN STOCK</span>
+                                <div class="rating-stars mb-2">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i> <span>1</span>
+                                </div>
+                                <span class="d-block mb-3"> <del class="text-secondary ">$12.00</del> <b
+                                        class="text-danger ms-2">$9.00</b> </span>
+                                <button type="button" class=" rounded-pill btn btn-primary btn-sm w-100">Add to
+                                    cart</button>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 60rem; position: relative;">
+                            <img src="./images/product-image-31-346x310.jpg" class="card-img-top" alt="...">
+
+                            <div class="product-wish">
+                                <div class="product-circle">
+                                    <i class="fa-solid fa-maximize"></i>
+                                </div>
+
+                                <div class="product-circle mt-1">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <p>Organic 100% Grassfed 85_15 Ground Beef</p>
+                                </a>
+                                <span class="text-success mb-2 d-block">IN STOCK</span>
+                                <div class="rating-stars mb-2">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-secondary"></i> <span>1</span>
+                                </div>
+                                <span class="d-block mb-3">  <b class="text-danger ms-2">$5.99</b> </span>
+                                <button type="button" class=" rounded-pill btn btn-primary btn-sm w-100">Add to
+                                    cart</button>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 60rem; position: relative;">
+                            <div class="product-badges" style="position: absolute;">
+                                <button type="button" class="btn btn-info btn-sm ">15%</button>
+                            </div>
+                            <img src="./images/product-image-11-346x310 (1).jpg" class="card-img-top" alt="...">
+
+                            <div class="product-wish">
+                                <div class="product-circle">
+                                    <i class="fa-solid fa-maximize"></i>
+                                </div>
+
+                                <div class="product-circle mt-1">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <p>Organic Sweet Lime</p><br>
+                                </a>
+                                <span class="text-success mb-2 d-block"> <span class="text-muted">1kg</span>  IN STOCK</span>
+                                <div class="rating-stars mb-2">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-secondary"></i> <span>1</span>
+                                </div>
+                                <span class="d-block mb-3"> <del class="text-secondary ">$6.99</del> <b
+                                        class="text-danger ms-2">$5.99</b> </span>
+                                <button type="button" class=" rounded-pill btn btn-primary btn-sm w-100">Add to
+                                    cart</button>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 60rem; position: relative;">
+                            <img src="./images/product-image-45-346x310 (1).jpg" class="card-img-top" alt="...">
+
+                            <div class="product-wish">
+                                <div class="product-circle">
+                                    <i class="fa-solid fa-maximize"></i>
+                                </div>
+
+                                <div class="product-circle mt-1">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <p>Foster Farms Takeout Crispy Classic Buffalo Wings</p>
+                                </a>
+                                <span class="text-success mb-2 d-block">IN STOCK</span>
+                                <div class="rating-stars mb-2">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-secondary"></i> <span>1</span>
+                                </div>
+                                <span class="d-block mb-3"><b class="text-danger ms-2">$7.25 – $49.99</b> </span>
+                                <button type="button" class=" rounded-pill btn btn-primary btn-sm w-100">Add to
+                                    cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-subscribe bg-primary mb-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="subscribe-content">
+                            <span class="text-light fs-5">$20 discount for your first order</span>
+                            <h3 class="text-light pt-3">Join our newsletter and get...</h3>
+                            <p class="text-muted">Join our email subscription now to get updates on promotions and
+                                coupons.</p>
+                        </div>
+
+                        <div class="subscribe-input bg-light pt-2 d-flex">
+                            <i class="fa-regular fa-envelope fs-3 p-1 ms-4" style="margin-top: 2px;"></i>
+
+                            <form action="">
+                                <input class="me-5 ms-1" type="email" name="" id="subscribe-in"
+                                    placeholder="Your Email">
+                                <input id="subscribe" type="submit" class="ms-5 p-2" value="Subscribe">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <img src="./images/coupon.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-icon-boxes pb-5">
+            <div class="container d-flex p-5">
+                <div class="icon-box ps-5 ">
+
+                    <i class="fa-solid fa-blender"></i>
+                    <span> Everyday fresh products</span>
+
+
+                </div>
+
+                <div class="icon-box  ps-4 ">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <span> Free delivery for order over $70</span>
+                </div>
+
+                <div class="icon-box  ps-5 ">
+                    <i class="fa-solid fa-percent"></i>
+                    <span> Daily Mega Discounts</span>
+                </div>
+                <div class="icon-box ps-5 b-none">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span> Best price on the market </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-ul pt-5">
+            <div class="container">
+                <ul class="d-flex justify-content-between  ps-0">
+                    <li>
+                        <span>FRUIT & VEGETABLES</span>
+                        <ul class="ps-0">
+                            <li>
+                                <a href="" class="text-decoration-none text-dark">Fresh Vegetables</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark"> Herbs & Seasonings</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark">Fresh Fruits</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark"> Cuts & Sprouts</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark">Exotic Fruits & Veggies </a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark">Packaged Produce </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-dark"> Party Trays</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <span>BREAKFAST & DAIRY</span>
+                        <ul class="ps-0">
+                            <li>
+                                <a href="" class="text-decoration-none text-dark">Milk & Flavoured Milk</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark"> Butter and Margarine</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark"> Cheese</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark">Eggs Substitutes</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark">Honey</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark">Marmalades</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-dark"> Sour Cream and Dips</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-dark"> Yogurt</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <span>MEAT & SEAFOOD</span>
+                        <ul class="ps-0">
+                            <li>
+                                <a href="" class="text-decoration-none text-dark"> Breakfast Sausage</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark"> Dinner Sausage</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark"> Beef</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark">Chicken</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark">Sliced Deli Meat</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark">Shrimp</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-dark"> Wild Caught Fillets</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-dark"> Crab and Shellfish</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-dark"> Farm Raised Fillets </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <span>BEVERAGES</span>
+                        <ul class="ps-0">
+                            <li>
+                                <a href="" class="text-decoration-none text-dark"> Water</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark"> Sparkling Water</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark"> Soda & Pop</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark">Coffee</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark"> Milk & Plant-Based Milk</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark">Tea & Kombucha</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-dark">Drink Boxes & Pouches </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-dark">Craft Beer </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-dark">Wine </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <span>BREADS & BAKERY</span>
+                        <ul class="ps-0">
+                            <li>
+                                <a href="" class="text-decoration-none text-dark">Milk & Flavoured Milk</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark"> Butter and Margarine</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark"> Cheese</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark">Eggs Substitutes</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark">Honey</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="text-decoration-none text-dark">Marmalades</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-dark"> Sour Cream and Dips</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none text-dark"> Yogurt</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="footer-contacts mt-5">
+            <div class="container">
+                <div class="footer-contact-detail">
+                    <div class="column column-left">
+                        <div class="site-phone d-flex">
+                            <div class="phone-icon">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div class="phone-detail ms-2">
+                                <h6>8 800 555-55</h6>
+                                <span class="text-muted d-block">Working 8:00 - 22:00</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="column column-right d-flex">
+                        <div class="site-mobile-app d-flex">
+                            <div class="app-detail">
+                                <h6>Download App on Mobile :</h6>
+                                <span class="text-muted">15% discount on your first purchase</span>
+                            </div>
+                            <div class="app-buttons mt-1">
+                                <a href="">
+                                    <img src="./images/google-play.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="./images/app-store.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="site-social">
+                            <ul class="ps-0 d-flex">
+                                <li><a href="" class="text-decoration-none fs-3"><i
+                                            class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="" class="text-decoration-none fs-3"><i
+                                            class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="" class="text-decoration-none fs-3"><i
+                                            class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <footer-copyright>
+        <div class="footer-bottom mb-3">
+            <div class="container d-flex ">
+                <div class="site-copyright mt-1 me-3">
+                    <p>Copyright 2022 © Bacola WordPress Theme. All rights reserved. Powered by KlbTheme.</p>
+                </div>
+                <ul class="d-flex me-2 ps-0">
+                    <li><a href="" class="text-decoration-none text-muted"> Privacy Policy</a></li>
+                    <li>
+                    <li><a href="" class="text-decoration-none text-muted"> Terms and Conditions</a></li>
+                    </li>
+                    <li>
+                    <li><a href="" class="text-decoration-none text-muted"> Cookie</a></li>
+                    </li>
+                </ul>
+                <div class="copryright-payment ms-5">
+                    <img src="./images/payments.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </footer-copyright>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script src="./script/srcipt.js"></script>
+
+</html>
