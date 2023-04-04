@@ -1,0 +1,202 @@
+.pro-detail-body{
+    background-color: whitesmoke;
+    height: 2000px;
+}
+
+/* //////////////page-headeeeeer///////////// */
+.page-header .container .row .col-6 ul li a{
+    text-decoration:none;
+     color: black;
+}
+.page-header .container .row .col-6 ul li a:hover{
+    text-decoration:underline;
+   
+}
+.page-header .container .row .col-6 ul li {
+list-style: none;
+font-size: 10px;
+font-weight: 600;
+padding-right: 3px;
+
+}
+.relative-left li{
+    position: relative;
+    left: -37px;
+}
+
+/* //////////showww-card///// */
+.page-header .container .row .col-6 .show-card{
+    width: 240px;
+    height: 90px;
+  background-color: white;
+  position: relative;
+left: 396px;
+  top: 35px;
+    border-radius: 2px;
+    display: flex;
+
+    /* ///////////// */
+      visibility: hidden;
+    /* ////////////////// */
+}
+.page-header .container .row .col-6 .show-card .show-card-img img{
+    width: 100%;
+    height: 100%;
+}
+.show-card-content a{
+    color: black;
+    text-decoration: none;
+}
+.show-card-content a:hover{
+    color: blue;
+    
+}
+.ul-left{
+    position: absolute;
+    right: 115px;
+}
+
+/* ///////////////html xeta verir  js-de helline baxmaq/////////// */
+.fa-chevron-left:hover .show-card{
+    /* z-index: 822; */
+    visibility: visible;
+
+}
+
+
+/* ///////////////product-container////// */
+.product-container{
+    background-color: white;
+    height: 673px;
+    border-radius: 5px;
+}
+.border-right{
+    padding-right: 8px;
+    border-right:inset ;
+}
+.product-prices{
+    top: -342px;
+    left: 2px;
+}
+.recom{
+    font-size: 8px;
+}
+
+.p-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: white;
+}
+.p-img-bs-1{
+    border: 1px solid;
+}
+.p-img-bs-2{
+     margin-left: 10px;
+    border: .1px outset;
+}
+.product-images{
+margin-left: 114px;
+margin-top: -20px;
+}
+.btn-color-fs{
+    font-size: 10px;
+   color: #be143c;
+   background-color: #ffeef2;
+   margin-top: 10px;
+   margin-bottom: 20px;
+}
+.border-desc-wish-btn{
+    border: .1px inset;
+}
+.type-life p{
+    font-size: 13px;
+}
+.pro-inf-desc{
+  
+    border-bottom: .1px inset;
+}
+.cat-a{
+    text-decoration: none;
+    color: black;
+}
+.cat-a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.social-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+       margin-right: 5px;
+       margin-top: 25px;
+}
+.fb-icon{
+    background-color: blue;
+}
+.twit-icon{
+    background-color: #1da1f2;
+}
+.pint-icon{
+    background-color: #e60023;
+}
+.lkin-icon{
+    background-color: #0077b5;
+}
+.reddit-icon{
+background-color:#ff4500 ;
+}
+.wp-icon{
+background-color:#25d366 ;
+}
+
+
+/* ///////////shipppingg-info//////// */
+.btn-covid{
+    color: #be143c;
+   background-color: #ffeef2;
+   width: 280px;
+}
+.shipping-info{
+    margin-left: 100px;
+}
+.shipping{
+    width: 280px;
+    height: 228px;
+    /* border-style: solid; */
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #f7f8fd;
+}
+.ship-icon{
+    font-size: 18px;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 13px;
+}
+
+.shipping-content{
+    position: relative;
+    top: 25px;
+}
+
+/* //////////////////prod-description///////////////// */
+.prod-description{
+    margin-top: 75px;
+    height: 440px;
+    border-radius: 5px;
+    background-color: white;
+}
+.prod-description-header{
+    border-bottom: .1px inset;
+    
+}
+.prod-descript-text{
+    width: 90%;
+    margin-left: 52px;
+    margin-top: 50px;
+}
+
