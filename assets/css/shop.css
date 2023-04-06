@@ -1,0 +1,192 @@
+/* //////page-header-title////// */
+.page-header .container .row ul li{
+    list-style-type: none;
+    font-size: 10px;
+}
+.page-header .container .row ul li a{
+    text-decoration: none;
+    color: black;
+}
+.page-header .container .row ul li a:hover{
+text-decoration: underline;
+}
+
+/* /////////////shop-page-content-right///// */
+.shop-page-content .container .row .col-8 .shop-page-img img{
+    border-radius: 5px;
+}
+
+.shop-product-nav{
+    margin-top: 30px;
+    height: 50px;
+    background-color: #abb8c33c;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.selector-icons{
+    font-size: 22px;
+    margin-left: 30px;
+    margin-top: 7px;
+}
+.selector-icons i{
+    cursor: pointer;
+ color: silver;
+ margin-right: 10px;
+}
+.c-black{
+    color: black!important;
+}
+.selector-icons i:hover{
+    color: black;
+}
+
+.sorts{
+    height: 30px;
+    border-right: 1px silver solid;
+}
+
+/* ////////////////soooooortt-uuuuulll///////////// */
+.sort-ul{
+    background-color: white;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+    position: absolute;
+    width: 250px;
+    height: 170px;
+    right: 200px;
+   margin-top: 10px;
+   z-index: -9;
+   visibility: hidden;
+   
+}
+.sort-ul ul li{  
+    list-style: none;
+    cursor: pointer;
+}
+.sort-ul ul li:hover{  
+    color: aqua;
+}
+.sort-ul ul {  
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+/* //////////////////////show-list-count////////////////////// */
+.show-list-count{
+    background-color: white;
+    width: 80px;
+    height: 135px;
+    border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+position: relative;
+z-index: -24;
+visibility: hidden;
+right: 68px;
+top: 32px;
+}
+.show-list-count ul{
+margin-top: 20px;
+}
+.show-list-count ul li{
+list-style: none;
+cursor: pointer;
+}
+
+.show-list-count ul li:hover{
+    color: aqua;
+}
+
+/* ///////////////////////////shop-page-cards////////// */
+.shop-page-cards .row .card{
+    height: 410px;
+}
+.shop-page-cards .row .card:hover{
+    height: 450px;
+    z-index: 9999;
+}
+.op-1{
+    visibility: hidden;
+}
+.shop-page-cards .row .card:hover .op-1{
+    visibility: visible;
+}
+.stock{
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.btn-recom{
+    background-color: silver;
+    display: block;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+/* ///////////////shop-page-numbers//// */
+.shop-page-numbers ul li{
+    list-style: none;
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-page-numbers ul li:hover{
+background-color: rgba(192, 192, 192, 0.299);
+cursor: pointer;
+}
+
+/* //////////////////////acccordioon////////// */
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    /* background-color: #eee;
+    color: #444; */
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: .4s;
+  }
+  .width{
+    width: 20px;
+    background-color: white;
+  
+  }
+  .mg{
+    margin-left: -30px;
+  }
+  .mg li ul{
+    margin-left: -40px;
+
+  }
+  /* .active, .accordion:hover {
+    background-color: #ccc;
+  } */
+
+  .panel {
+    padding: 0 18px;
+    /* background-color: white; */
+    display: none;
+    overflow: hidden;
+  }
+  .shop-accordion ul li a input,label{
+    cursor: pointer;
+
+  }
+  .shop-accordion ul li{
+ list-style-type: none; 
+  }
+
+.shop-brands{
+    width: 82%;
+}
+.shop-gif{
+    width: 82%;
+}
