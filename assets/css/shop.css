@@ -86,6 +86,14 @@ visibility: hidden;
 right: 68px;
 top: 32px;
 }
+.showlistcount-visible{
+ z-index: 876;
+visibility: visible!important;
+}
+
+.negativezindex{
+  z-index: -888;
+}
 .show-list-count ul{
 margin-top: 20px;
 }
@@ -190,3 +198,77 @@ cursor: pointer;
 .shop-gif{
     width: 82%;
 }
+
+
+/* /////////////shop-price-range-filter////////// */
+.range-slider {
+    height: 5px;
+    width: 82%;
+    position: relative;
+    background-color: #e1e9f6;
+    border-radius: 2px;
+  }
+  .range-selected {
+    height: 100%;
+    left: 0%;
+    right: 0%;
+    position: absolute;
+    border-radius: 5px;
+    background-color: black;
+  }
+
+  .range-input {
+    position: relative;
+  }
+  .range-input input {
+    position: absolute;
+    width: 82%;
+    height: 5px;
+    top: -7px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .range-input input::-webkit-slider-thumb {
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: black;
+    pointer-events: auto;
+    -webkit-appearance: none;
+  }
+  .range-input input::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: #fff;
+    pointer-events: auto;
+    -moz-appearance: none;
+  }
+  .range-price {
+    margin: 10px -90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .range-price label {
+    margin-left: 2px;
+  }
+  /* .range-price input {
+    width: 60px;
+    padding: 5px;
+  } */
+  .range-price input:first-of-type {
+    margin-right: 15px;
+  }
+  .filter-span{
+    position: relative;
+    top: -34px;
+    left: 203px;
+    font-weight: 600;
+    font-size: 13px;
+  }

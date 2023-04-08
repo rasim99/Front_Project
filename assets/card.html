@@ -83,10 +83,118 @@
                 </div>
                 <div class="col-2">
                     <div class="location">
-                        <div class="location-content">
-                            <span>Your Location</span>
-                            <div class="location-actived text-dark fw-bold">
-                                <span>Choose Your Location</span> <i class="fa-solid fa-chevron-down"></i>
+
+
+                        <div class="location-modal">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn modal-btn btn-light" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <div class="location-content">
+                                    <span>Your Location</span>
+                                    <div class="location-actived d-flex justify-content-center fw-bold">
+                                        <span class="text-primary">Select a Location</span> <i
+                                            class="fa-solid fa-chevron-down ms-2"></i>
+                                    </div>
+                                </div>
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <button type="button" class="btn-close modalclick" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+
+                                        <div class="modal-body">
+                                            <h5 class="modal-title" id="exampleModalLabel">Choose your Delivery Location
+                                            </h5>
+                                            <span>Enter your address and we will specify the offer for your area.</span>
+                                            <br>
+
+                                            
+                                            <!-- Scrollable modal -->
+                                                        <div class="modal-dialog modal-dialog-scrollable">
+
+                                                         <div class="container">
+                                                            <div class="serach-div">
+                                                                <div class="search-icon ms-3">
+                                                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                                                </div>
+                                                                <input type="search" class="serach-modal-input" placeholder="Search your area">
+                                                            </div>
+
+                                                            <div class="ul-areas">
+                                                                <ul class="mt-4" >
+                                                                    <li>
+                                                                        <span>Select a Location</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Clear All</span>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <span>Alabama</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Min:130$</span>
+                                                                    </li>
+
+
+                                                                    <li>
+                                                                        <span>Alaska</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Min:120$</span>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <span>Arizona</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Min:150$</span>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <span>California</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Min:110$</span>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <span>Colorado</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Min:140$</span>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <span>Florida</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Min:160$</span>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <span>Georgia</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Min:120$</span>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <span>Kansas</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Min:170$</span>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <span>Minnesota</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Min:120$</span>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <span>New York</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Min:120$</span>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <span>Washington</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Min:130$</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                         </div>
+                                                        </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -103,18 +211,18 @@
                 <!-- LOGIN -->
                 <div class="col-2">
                     <div class="login-user">
-                        <i class="fa-regular fa-user"></i>
+                       <a href="./login.html"> <i class="fa-regular fa-user"></i></a>
                     </div>
                 </div>
                 <div class="col-2">
                     <!-- BASKET -->
                     <div class="basket-content">
-                        <span>$0.00</span>
+                        <span >$0.00</span>
 
                         <div class="basket-bag">
-                            <i class="fa-solid fa-bag-shopping"></i>
+                           <a href="./card.html"> <i class="fa-solid fa-bag-shopping"></i></a>
                             <div class="sup-div">
-                                <sup id="countbasket" style="top: 0.5rem">0</sup>
+                                <sup id="countbasket">0</sup>
                             </div>
                         </div>
                     </div>
@@ -135,6 +243,7 @@
                             <i class="fa-solid fa-bars"></i>
                             <span>ALL CATEGORIES</span>
                             <i class="fa-solid fa-chevron-down"></i>
+                            <span class="badge rounded-pill bg-color">TOTAL 63 PRODUCTS</span>
                         </div>
                     </div>
 
@@ -142,17 +251,17 @@
                     <div class="col-10">
                         <ul class="menu d-flex">
                             <li id="home-sub-menu">
-                                <a href="#">HOME <i class="fa-solid fa-chevron-down"></i></a>
+                                <a href="./index.html">HOME <i class="fa-solid fa-chevron-down"></i></a>
                                 <ul id="sub-menu">
-                                    <li><a href="">Home1</a></li>
-                                    <li><a href="">Home2</a></li>
-                                    <li><a href="">Home3</a></li>
-                                    <li><a href="">Home4</a></li>
-                                    <li><a href="">Home5</a></li>
+                                    <li><a href="./index.html">Home1</a></li>
+                                    <li><a href="./index.html">Home2</a></li>
+                                    <li><a href="./index.html">Home3</a></li>
+                                    <li><a href="./index.html">Home4</a></li>
+                                    <li><a href="./index.html">Home5</a></li>
                                 </ul>
                             </li>
                             <li id="li-shop-ul">
-                                <a href="#">SHOP <i class="fa-solid fa-chevron-down"></i> </a>
+                                <a href="./shop.html">SHOP <i class="fa-solid fa-chevron-down"></i> </a>
                                 <ul id="shop-ul" class="d-flex">
                                     <li>
                                         <a class="text-primary" href="#">Shop Lists</a>
@@ -216,27 +325,25 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#"><i class="fa-solid fa-drumstick-bite"></i> MEATS &SEA FOODS</a>
+                                <a href="./shop.html"><i class="fa-solid fa-drumstick-bite"></i> MEATS &SEA FOODS</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa-solid fa-cookie-bite"></i> BAKERY</a>
+                                <a href="./shop.html"><i class="fa-solid fa-cookie-bite"></i> BAKERY</a>
                             </li>
                             <li>
-                                <a href="#"> <i class="fa-solid fa-mug-hot"></i> BEVERAGES</a>
+                                <a href="./shop.html"> <i class="fa-solid fa-mug-hot"></i> BEVERAGES</a>
                             </li>
                             <li>
-                                <a href="#">BLOG</a>
+                                <a href="./blog.html">BLOG</a>
                             </li>
                             <li>
-                                <a href="#">CONTACT</a>
+                                <a href="./contact.html">CONTACT</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </nav>
     <main>
         <div class="page-header">
@@ -681,9 +788,9 @@
         </div>
     </footer-copyright>
 </body>
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script> -->
+    crossorigin="anonymous"></script>
     <script src="./script/basket-card.js"></script>
 <script src="./script/card.js"></script>
 

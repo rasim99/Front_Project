@@ -1,0 +1,65 @@
+.sect-icons-divs .container .row .col-4{
+   
+    width: 365px;
+    height: 202px;
+    border-radius: 5px;
+    background-color: #a2b0bb33;
+}
+body{
+    background-color: whitesmoke;
+}
+.sect-icons-divs .container .row .col-4 .contact-icons i{
+color: rgba(14, 14, 208, 0.596);
+margin-left: 100px;
+margin-bottom: 20px;
+}
+.send-us{
+    width: 1325px;
+    height: 828px;
+ background-color: white;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    margin-left: -10px;
+    
+}
+.send-us-header{
+    border-bottom: inset;
+    width: 54%;
+   position: relative;
+   top: 100px;
+   left: 280px;
+} 
+.send-us-form{
+    /* border: 2px solid; */
+    width: 54%;
+    height: 450px;
+    position: relative;
+    top: 180px;
+    left: 280px;
+}
+.send-us-form .name-email .col-6 input{
+    background-color: rgba(180, 196, 210, 0.219);
+    width: 93.2%;
+    border-style: none;
+}
+.form-subject input{
+    background-color: rgba(180, 196, 210, 0.219);
+    width: 100%;
+    margin-top: 10px;
+    border-style: none;
+    
+}
+.text-area textarea{
+    background-color: rgba(180, 196, 210, 0.219);
+   
+}
+textarea{
+    
+    resize: none;
+    height: 120px;
+}
+.send-message{
+    margin-top: 20px;
+    color: white;
+    background-color: rgba(12, 12, 169, 0.831);
+}

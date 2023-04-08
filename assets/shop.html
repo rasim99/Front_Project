@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/shop.css">
     <title>Shop</title>
 </head>
-     
+
 <body>
     <header>
         <div class="hedaer">
@@ -81,10 +81,118 @@
                 </div>
                 <div class="col-2">
                     <div class="location">
-                        <div class="location-content">
-                            <span>Your Location</span>
-                            <div class="location-actived text-dark fw-bold">
-                                <span>Choose Your Location</span> <i class="fa-solid fa-chevron-down"></i>
+
+
+                        <div class="location-modal">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn modal-btn btn-light" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <div class="location-content">
+                                    <span>Your Location</span>
+                                    <div class="location-actived d-flex justify-content-center fw-bold">
+                                        <span class="text-primary">Select a Location</span> <i
+                                            class="fa-solid fa-chevron-down ms-2"></i>
+                                    </div>
+                                </div>
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <button type="button" class="btn-close modalclick" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+
+                                        <div class="modal-body">
+                                            <h5 class="modal-title" id="exampleModalLabel">Choose your Delivery Location
+                                            </h5>
+                                            <span>Enter your address and we will specify the offer for your area.</span>
+                                            <br>
+
+                                            
+                                            <!-- Scrollable modal -->
+                                                        <div class="modal-dialog modal-dialog-scrollable">
+
+                                                         <div class="container">
+                                                            <div class="serach-div">
+                                                                <div class="search-icon ms-3">
+                                                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                                                </div>
+                                                                <input type="search" class="serach-modal-input" placeholder="Search your area">
+                                                            </div>
+
+                                                            <div class="ul-areas">
+                                                                <ul class="mt-4" >
+                                                                    <li>
+                                                                        <span>Select a Location</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Clear All</span>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <span>Alabama</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Min:130$</span>
+                                                                    </li>
+
+
+                                                                    <li>
+                                                                        <span>Alaska</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Min:120$</span>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <span>Arizona</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Min:150$</span>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <span>California</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Min:110$</span>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <span>Colorado</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Min:140$</span>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <span>Florida</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Min:160$</span>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <span>Georgia</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Min:120$</span>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <span>Kansas</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Min:170$</span>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <span>Minnesota</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Min:120$</span>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <span>New York</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Min:120$</span>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <span>Washington</span>
+                                                                        <span class="badge rounded-pill bg-light text-dark">Min:130$</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                         </div>
+                                                        </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -101,18 +209,18 @@
                 <!-- LOGIN -->
                 <div class="col-2">
                     <div class="login-user">
-                        <i class="fa-regular fa-user"></i>
+                       <a href="./login.html"> <i class="fa-regular fa-user"></i></a>
                     </div>
                 </div>
                 <div class="col-2">
                     <!-- BASKET -->
                     <div class="basket-content">
-                        <span>$0.00</span>
+                        <span >$0.00</span>
 
                         <div class="basket-bag">
-                            <i class="fa-solid fa-bag-shopping"></i>
+                           <a href="./card.html"> <i class="fa-solid fa-bag-shopping"></i></a>
                             <div class="sup-div">
-                                <sup>0</sup>
+                                <sup id="countbasket">0</sup>
                             </div>
                         </div>
                     </div>
@@ -133,6 +241,7 @@
                             <i class="fa-solid fa-bars"></i>
                             <span>ALL CATEGORIES</span>
                             <i class="fa-solid fa-chevron-down"></i>
+                            <span class="badge rounded-pill bg-color">TOTAL 63 PRODUCTS</span>
                         </div>
                     </div>
 
@@ -140,17 +249,17 @@
                     <div class="col-10">
                         <ul class="menu d-flex">
                             <li id="home-sub-menu">
-                                <a href="#">HOME <i class="fa-solid fa-chevron-down"></i></a>
-                                <ul  id="sub-menu">
-                                    <li><a href="">Home1</a></li>
-                                    <li><a href="">Home2</a></li>
-                                    <li><a href="">Home3</a></li>
-                                    <li><a href="">Home4</a></li>
-                                    <li><a href="">Home5</a></li>
+                                <a href="./index.html">HOME <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul id="sub-menu">
+                                    <li><a href="./index.html">Home1</a></li>
+                                    <li><a href="./index.html">Home2</a></li>
+                                    <li><a href="./index.html">Home3</a></li>
+                                    <li><a href="./index.html">Home4</a></li>
+                                    <li><a href="./index.html">Home5</a></li>
                                 </ul>
                             </li>
                             <li id="li-shop-ul">
-                                <a href="#">SHOP <i class="fa-solid fa-chevron-down"></i> </a>
+                                <a href="./shop.html">SHOP <i class="fa-solid fa-chevron-down"></i> </a>
                                 <ul id="shop-ul" class="d-flex">
                                     <li>
                                         <a class="text-primary" href="#">Shop Lists</a>
@@ -214,19 +323,19 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#"><i class="fa-solid fa-drumstick-bite"></i> MEATS &SEA FOODS</a>
+                                <a href="./shop.html"><i class="fa-solid fa-drumstick-bite"></i> MEATS &SEA FOODS</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa-solid fa-cookie-bite"></i> BAKERY</a>
+                                <a href="./shop.html"><i class="fa-solid fa-cookie-bite"></i> BAKERY</a>
                             </li>
                             <li>
-                                <a href="#"> <i class="fa-solid fa-mug-hot"></i> BEVERAGES</a>
+                                <a href="./shop.html"> <i class="fa-solid fa-mug-hot"></i> BEVERAGES</a>
                             </li>
                             <li>
-                                <a href="#">BLOG</a>
+                                <a href="./blog.html">BLOG</a>
                             </li>
                             <li>
-                                <a href="#">CONTACT</a>
+                                <a href="./contact.html">CONTACT</a>
                             </li>
                         </ul>
                     </div>
@@ -234,21 +343,15 @@
             </div>
         </div>
     </nav>
- 
-     <main>
+
+    <main>
         <div class="page-header">
             <div class="container ">
                 <div class="row ">
                     <ul class="d-flex relative-left ">
-                        <li > <a href="./index.html" > HOME </a> <i class="fa-solid fa-chevron-right"></i></li>
+                        <li> <a href="./index.html"> HOME </a> <i class="fa-solid fa-chevron-right"></i></li>
                         <li> <span class="text-muted ms-2">SHOP</span></li>
-                       
                     </ul>
-                    <div class="col-6 mt-4">
-                       
-                    </div>
-
-
                 </div>
             </div>
         </div>
@@ -256,101 +359,208 @@
             <div class="container">
                 <div class="row">
                     <div class="col-3">
-                    
+
                         <div class="shop-pro-categories">
 
                             <h6>PRODUCT CATEGORIES</h6>
                             <div class="shop-accordion">
                                 <ul class="mg">
-                                <li> <a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-bever"> <label for="prod-bever"> Beverages</label>  </a><button class="accordion width"><i class="fa-solid fa-plus"></i>  <i class="fa-solid fa-minus d-none"></i></button>
-                                 <div class="panel">
-                                  <ul>
-                                     <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-cofe"></a> <label for="prod-cofe"> Coffee</label></li>
-                                     <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-craft"></a> <label for="prod-craft"> Craft Beer</label></li>
-                                     <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-drink-box"></a> <label for="prod-drink-box"> Drink Boxes & Pouches</label></li>
-                                     <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-milk-plant"></a> <label for="prod-milk-plant"> Milk & Plant-Based Milk</label></li>
-                                     <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-sodapop"></a> <label for="prod-sodapop"> Soda & Pop</label></li>
-                                     <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-sparlinkwater"></a> <label for="prod-sparlinkwater"> Sparkling Water</label></li>
-                                     <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-teaKombucha"></a> <label for="prod-teaKombucha"> Tea & Kombucha</label></li>
-                                     <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-Water"></a> <label for="prod-Water"> Water</label></li>
-                                     <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-wine"></a> <label for="prod-wine"> Wine</label></li>
-           
-                                  </ul>
-                                 </div>
-                                
-                                 </li>
-     
-                                 <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-biscsnack"></a> <label for="prod-biscsnack"> Biscuits & Snacks</label></li>
-                             
-                                 <li> <a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-breadbakery"> <label for="prod-breadbakery">Breads & Bakery</label></a> <button class="accordion width"><i class="fa-solid fa-plus"></i>  <i class="fa-solid fa-minus d-none"></i></button>
-                                     <div class="panel">
-                                      <ul>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-bunsrolls"></a><label for="prod-bunsrolls">Buns and Rolls</label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-cakesCupcakes"></a><label for="prod-cakesCupcakes">Cakes and Cupcakes</label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-cookiesBrownies"></a><label for="prod-cookiesBrownies">Cookies and Brownies</label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-donutsMuffins"></a><label for="prod-donutsMuffins">Donuts and Muffins</label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-orderSpecialtycakes"></a><label for="prod-orderSpecialtycakes">Order Specialty Cakes</label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-packagedBreads"></a><label for="prod-packagedBreads">Packaged Breads</label></li>
-                                      </ul>
-                                     </div>
-                                    
-                                 </li>
-                               
-                                 <li> <a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-Breakfastdairy"> <label for="prod-Breakfastdairy">Breakfast & Dairy</label></a> <button class="accordion width"><i class="fa-solid fa-plus"></i>  <i class="fa-solid fa-minus d-none"></i></button>
-                                     <div class="panel">
-                                      <ul>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-butterMargarine"></a><label for="prod-butterMargarine">Butter and Margarine</label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-cheese"></a><label for="prod-cheese"> Cheese</label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-eggsSubstitutes"></a><label for="prod-eggsSubstitutes">Eggs Substitutes </label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-honey"></a><label for="prod-honey"> Honey</label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-Marmalades"></a><label for="prod-Marmalades">Marmalades  </label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-milkFlavouredmilk"></a><label for="prod-milkFlavouredmilk">Milk & Flavoured Milk </label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-sourcreamdips"></a><label for="prod-sourcreamdips"> Sour Cream and Dips</label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-Yogurt"></a><label for="prod-Yogurt"> Yogurt</label></li>
-                                     </ul>
-                                     </div>
-                                 </li>
-     
-                                 <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-frozenFoods"></a> <label for="prod-frozenFoods"> Frozen Foods</label></li>
-     
-                                 <li> <a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-fruitsVegetables"> <label for="prod-fruitsVegetables"> Fruits & Vegetables </label></a> <button class="accordion width"><i class="fa-solid fa-plus"></i>  <i class="fa-solid fa-minus d-none"></i></button>
-                                     <div class="panel">
-                                      <ul>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-herbsSeasonings"></a><label for="prod-herbsSeasonings">Herbs & Seasonings </label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-packagedProduce"></a><label for="prod-packagedProduce"> Packaged Produce </label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-partyTrays"></a><label for="prod-partyTrays"> Party Trays </label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-cutsSprouts"></a><label for="prod-cutsSprouts"> Cuts & Sprouts</label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-exoticFruitsVeggies"></a><label for="prod-exoticFruitsVeggies"> Exotic Fruits & Veggies </label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-freshFruits"></a><label for="prod-freshFruits">   Fresh Fruits </label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-freshVegetables"></a><label for="prod-freshVegetables">  Fresh Vegetables  </label></li>
-                                     </ul>
-                                     </div>
-                                 </li>
-                                 
-                                 <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-groceryStaples"></a> <label for="prod-groceryStaples"> Grocery & Staples</label></li>
-     
-                                 <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-Householdneeds"></a> <label for="prod-Householdneeds"> Household Needs</label></li>
-                                 
-                                 <li> <a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-meatsSeafood"> <label for="prod-meatsSeafood"> Meats & Seafood </label></a> <button class="accordion width"><i class="fa-solid fa-plus"></i>  <i class="fa-solid fa-minus d-none"></i></button>
-                                     <div class="panel">
-                                      <ul>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-Shrimp"></a><label for="prod-Shrimp"> Shrimp</label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-sliceddelimeat"></a><label for="prod-sliceddelimeat"> Sliced Deli Meat </label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-wildcaughtFillets"></a><label for="prod-wildcaughtFillets">Wild Caught Fillets  </label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-Beef"></a><label for="prod-Beef">Beef </label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-breakfastSausage"></a><label for="prod-breakfastSausage"> Breakfast Sausage </label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-Chicken"></a><label for="prod-Chicken">  Chicken </label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-crabShellfish"></a><label for="prod-crabShellfish">  Crab and Shellfish  </label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-dinnerSausage"></a><label for="prod-dinnerSausage">   Dinner Sausage </label></li>
-                                         <li><a href="" class="text-decoration-none text-dark"><input type="checkbox" id="prod-farmRaisedfillets"></a><label for="prod-farmRaisedfillets">  Farm Raised Fillets  </label></li>
-     
-                                     </ul>
-                                     </div>
-                                 </li>
-                                 
+                                    <li> <a href="" class="text-decoration-none text-dark"><input type="checkbox"
+                                                id="prod-bever"> <label for="prod-bever"> Beverages</label> </a><button
+                                            class="accordion width"><i class="fa-solid fa-plus"></i> <i
+                                                class="fa-solid fa-minus d-none"></i></button>
+                                        <div class="panel">
+                                            <ul>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-cofe"></a> <label for="prod-cofe">
+                                                        Coffee</label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-craft"></a> <label
+                                                        for="prod-craft"> Craft Beer</label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-drink-box"></a> <label
+                                                        for="prod-drink-box"> Drink Boxes & Pouches</label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-milk-plant"></a> <label
+                                                        for="prod-milk-plant"> Milk & Plant-Based Milk</label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-sodapop"></a> <label
+                                                        for="prod-sodapop"> Soda & Pop</label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-sparlinkwater"></a> <label
+                                                        for="prod-sparlinkwater"> Sparkling Water</label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-teaKombucha"></a> <label
+                                                        for="prod-teaKombucha"> Tea & Kombucha</label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-Water"></a> <label
+                                                        for="prod-Water"> Water</label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-wine"></a> <label for="prod-wine">
+                                                        Wine</label></li>
+
+                                            </ul>
+                                        </div>
+
+                                    </li>
+
+                                    <li><a href="" class="text-decoration-none text-dark"><input type="checkbox"
+                                                id="prod-biscsnack"></a> <label for="prod-biscsnack"> Biscuits &
+                                            Snacks</label></li>
+
+                                    <li> <a href="" class="text-decoration-none text-dark"><input type="checkbox"
+                                                id="prod-breadbakery"> <label for="prod-breadbakery">Breads &
+                                                Bakery</label></a> <button class="accordion width"><i
+                                                class="fa-solid fa-plus"></i> <i
+                                                class="fa-solid fa-minus d-none"></i></button>
+                                        <div class="panel">
+                                            <ul>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-bunsrolls"></a><label
+                                                        for="prod-bunsrolls">Buns and Rolls</label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-cakesCupcakes"></a><label
+                                                        for="prod-cakesCupcakes">Cakes and Cupcakes</label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-cookiesBrownies"></a><label
+                                                        for="prod-cookiesBrownies">Cookies and Brownies</label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-donutsMuffins"></a><label
+                                                        for="prod-donutsMuffins">Donuts and Muffins</label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-orderSpecialtycakes"></a><label
+                                                        for="prod-orderSpecialtycakes">Order Specialty Cakes</label>
+                                                </li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-packagedBreads"></a><label
+                                                        for="prod-packagedBreads">Packaged Breads</label></li>
+                                            </ul>
+                                        </div>
+
+                                    </li>
+
+                                    <li> <a href="" class="text-decoration-none text-dark"><input type="checkbox"
+                                                id="prod-Breakfastdairy"> <label for="prod-Breakfastdairy">Breakfast &
+                                                Dairy</label></a> <button class="accordion width"><i
+                                                class="fa-solid fa-plus"></i> <i
+                                                class="fa-solid fa-minus d-none"></i></button>
+                                        <div class="panel">
+                                            <ul>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-butterMargarine"></a><label
+                                                        for="prod-butterMargarine">Butter and Margarine</label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-cheese"></a><label
+                                                        for="prod-cheese"> Cheese</label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-eggsSubstitutes"></a><label
+                                                        for="prod-eggsSubstitutes">Eggs Substitutes </label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-honey"></a><label for="prod-honey">
+                                                        Honey</label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-Marmalades"></a><label
+                                                        for="prod-Marmalades">Marmalades </label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-milkFlavouredmilk"></a><label
+                                                        for="prod-milkFlavouredmilk">Milk & Flavoured Milk </label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-sourcreamdips"></a><label
+                                                        for="prod-sourcreamdips"> Sour Cream and Dips</label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-Yogurt"></a><label
+                                                        for="prod-Yogurt"> Yogurt</label></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li><a href="" class="text-decoration-none text-dark"><input type="checkbox"
+                                                id="prod-frozenFoods"></a> <label for="prod-frozenFoods"> Frozen
+                                            Foods</label></li>
+
+                                    <li> <a href="" class="text-decoration-none text-dark"><input type="checkbox"
+                                                id="prod-fruitsVegetables"> <label for="prod-fruitsVegetables"> Fruits &
+                                                Vegetables </label></a> <button class="accordion width"><i
+                                                class="fa-solid fa-plus"></i> <i
+                                                class="fa-solid fa-minus d-none"></i></button>
+                                        <div class="panel">
+                                            <ul>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-herbsSeasonings"></a><label
+                                                        for="prod-herbsSeasonings">Herbs & Seasonings </label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-packagedProduce"></a><label
+                                                        for="prod-packagedProduce"> Packaged Produce </label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-partyTrays"></a><label
+                                                        for="prod-partyTrays"> Party Trays </label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-cutsSprouts"></a><label
+                                                        for="prod-cutsSprouts"> Cuts & Sprouts</label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-exoticFruitsVeggies"></a><label
+                                                        for="prod-exoticFruitsVeggies"> Exotic Fruits & Veggies </label>
+                                                </li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-freshFruits"></a><label
+                                                        for="prod-freshFruits"> Fresh Fruits </label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-freshVegetables"></a><label
+                                                        for="prod-freshVegetables"> Fresh Vegetables </label></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li><a href="" class="text-decoration-none text-dark"><input type="checkbox"
+                                                id="prod-groceryStaples"></a> <label for="prod-groceryStaples"> Grocery
+                                            & Staples</label></li>
+
+                                    <li><a href="" class="text-decoration-none text-dark"><input type="checkbox"
+                                                id="prod-Householdneeds"></a> <label for="prod-Householdneeds">
+                                            Household Needs</label></li>
+
+                                    <li> <a href="" class="text-decoration-none text-dark"><input type="checkbox"
+                                                id="prod-meatsSeafood"> <label for="prod-meatsSeafood"> Meats & Seafood
+                                            </label></a> <button class="accordion width"><i
+                                                class="fa-solid fa-plus"></i> <i
+                                                class="fa-solid fa-minus d-none"></i></button>
+                                        <div class="panel">
+                                            <ul>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-Shrimp"></a><label
+                                                        for="prod-Shrimp"> Shrimp</label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-sliceddelimeat"></a><label
+                                                        for="prod-sliceddelimeat"> Sliced Deli Meat </label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-wildcaughtFillets"></a><label
+                                                        for="prod-wildcaughtFillets">Wild Caught Fillets </label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-Beef"></a><label
+                                                        for="prod-Beef">Beef </label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-breakfastSausage"></a><label
+                                                        for="prod-breakfastSausage"> Breakfast Sausage </label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-Chicken"></a><label
+                                                        for="prod-Chicken"> Chicken </label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-crabShellfish"></a><label
+                                                        for="prod-crabShellfish"> Crab and Shellfish </label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-dinnerSausage"></a><label
+                                                        for="prod-dinnerSausage"> Dinner Sausage </label></li>
+                                                <li><a href="" class="text-decoration-none text-dark"><input
+                                                            type="checkbox" id="prod-farmRaisedfillets"></a><label
+                                                        for="prod-farmRaisedfillets"> Farm Raised Fillets </label></li>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+
                                 </ul>
-     
-                             </div>
+
+                            </div>
                         </div>
 
                         <div class="shop-price-filter">
@@ -358,10 +568,30 @@
                                 <h6>FILTER BY PRICE</h6>
                             </div>
                             <div class="shop-filter-range">
-                               <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                                <div class="range">
+                                    <div class="range-slider">
+                                        <span class="range-selected"></span>
+                                    </div>
+                                    <div class="range-input">
+                                        <input type="range" class="min" min="0" max="70" value="0" step="10">
+                                        <input type="range" class="max" min="0" max="70" value="70" step="10">
+                                    </div>
+                                    <div class="range-price">
+
+                                        <label for="min"><span class="text-muted fs-lighter"> Price: </span> <span
+                                                id="min-price" class="fw-bold">$0</span></label>
+                                        <input type="number" name="min" value="0" class="d-none">
+                                        <label for="max"><span> —</span><span id="max-price"
+                                                class="fw-bold">$70</span></label>
+                                        <input type="number" name="max" value="70" class="d-none">
+
+                                    </div>
+                                </div>
+                                <span class="filter-span">FILTER</span>
+
                             </div>
                         </div>
- 
+
                         <div class="prod-status mt-5">
                             <h6>PRODUCT STATUS</h6>
 
@@ -371,7 +601,7 @@
                             </div>
                             <div class="prod-input-sale mt-2">
                                 <input type="checkbox" id="onsale">
-                                <label for="onsale" class="ms-2">  On Sale</label>
+                                <label for="onsale" class="ms-2"> On Sale</label>
                             </div>
                         </div>
 
@@ -379,16 +609,16 @@
                             <div class="brands-header mt-5 me-4">
                                 <h6>BRANDS</h6>
                             </div>
-                            
+
                             <div class="brands-inputs-count ">
                                 <div class="brands-input d-flex justify-content-between">
-                                <div class="br-inp">
-                                    <input type="checkbox" id="frito">
-                                    <label for="frito">Frito Lay</label>
-                                </div>
-                                <div class="brands-inp-count">
-                                    <p>(10)</p>
-                                </div>
+                                    <div class="br-inp">
+                                        <input type="checkbox" id="frito">
+                                        <label for="frito">Frito Lay</label>
+                                    </div>
+                                    <div class="brands-inp-count">
+                                        <p>(10)</p>
+                                    </div>
                                 </div>
 
                                 <div class="brands-input d-flex justify-content-between">
@@ -399,9 +629,9 @@
                                     <div class="brands-inp-count">
                                         <p>(11)</p>
                                     </div>
-                                    </div>
-                             
-                                    
+                                </div>
+
+
                                 <div class="brands-input d-flex justify-content-between">
                                     <div class="br-inp">
                                         <input type="checkbox" id="Oreo">
@@ -410,28 +640,28 @@
                                     <div class="brands-inp-count">
                                         <p>(9)</p>
                                     </div>
+                                </div>
+
+                                <div class="brands-input d-flex justify-content-between">
+                                    <div class="br-inp">
+                                        <input type="checkbox" id="Quaker">
+                                        <label for="Quaker">Quaker</label>
                                     </div>
+                                    <div class="brands-inp-count">
+                                        <p>(10)</p>
+                                    </div>
+                                </div>
 
-                                    <div class="brands-input d-flex justify-content-between">
-                                        <div class="br-inp">
-                                            <input type="checkbox" id="Quaker">
-                                            <label for="Quaker">Quaker</label>
-                                        </div>
-                                        <div class="brands-inp-count">
-                                            <p>(10)</p>
-                                        </div>
-                                        </div>
 
-                                        
-                                    <div class="brands-input d-flex justify-content-between">
-                                        <div class="br-inp">
-                                            <input type="checkbox" id="Welch's">
-                                            <label for="Welch's">Welch's</label>
-                                        </div>
-                                        <div class="brands-inp-count">
-                                            <p>(10)</p>
-                                        </div>
-                                        </div>
+                                <div class="brands-input d-flex justify-content-between">
+                                    <div class="br-inp">
+                                        <input type="checkbox" id="Welch's">
+                                        <label for="Welch's">Welch's</label>
+                                    </div>
+                                    <div class="brands-inp-count">
+                                        <p>(10)</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -447,35 +677,40 @@
                         </div>
 
                         <div class="shop-product-nav">
-                         <div class="selector-icons">
-                            <i class="fa-solid fa-bars"></i>
-                            <i class="fa-solid fa-ellipsis"></i>
-                            <i class="fa-solid fa-list-ul"></i>
-                            <i class="fa-regular fa-rectangle-list c-black"></i>
-                         </div>
-                         <div class="selector-spans d-flex me-5 mt-2">
-                            <div class="sorts me-4">
-                           <a href="" class="text-decoration-none text-dark me-4"><span>Sort by latest </span><i class="fa-solid fa-chevron-down"></i></a>
-                           <div class="sort-ul">
-                            <ul>
-                                <li>Sort by popularty</li>
-                                <li >Sort by average rating</li>
-                                <li class="text-primary">Sort by latest</li>
-                                <li>Sort by price: low to hight</li>
-                                <li>Sort by price: hight to low</li>
-                            </ul>
-                           </div>
-                        </div>
-                           <span class="text-muted me-1">Show</span><a href="" class="text-decoration-none text-dark"><span>12 </span><i class="fa-solid fa-chevron-down"></i></a>
-                          <div class="show-list-count">
-                            <ul>
-                                <li class="text-primary">12</li>
-                                <li>24</li>
-                                <li > 36</li>
-                                <li>48</li>
-                            </ul>
-                          </div>
-                        </div>
+                            <div class="selector-icons">
+                                <i class="fa-solid fa-bars"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                                <i class="fa-solid fa-list-ul"></i>
+                                <i class="fa-regular fa-rectangle-list c-black"></i>
+                            </div>
+                            <div class="selector-spans d-flex me-5 mt-2">
+                                <div class="sorts me-4">
+                                    <a href="" class="text-decoration-none clckShowToggle text-dark me-4"><span>Sort
+                                            by latest
+                                        </span><i class="fa-solid fa-chevron-down"></i>
+                                    </a>
+                                    <div class="sort-ul">
+                                        <ul>
+                                            <li>Sort by popularty</li>
+                                            <li>Sort by average rating</li>
+                                            <li class="text-primary">Sort by latest</li>
+                                            <li>Sort by price: low to hight</li>
+                                            <li>Sort by price: hight to low</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <span class="text-muted me-1">Show</span>
+                                <a href="" class="text-decoration-none text-dark clckShowToggle"><span>12</span><i
+                                        class="fa-solid fa-chevron-down"></i></a>
+                                <div class="show-list-count">
+                                    <ul>
+                                        <li class="text-primary">12</li>
+                                        <li>24</li>
+                                        <li> 36</li>
+                                        <li>48</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="shop-page-cards ms-3 mt-4">
@@ -486,17 +721,17 @@
                                         <button type="button" class="btn btn-recom btn-sm ">RECOMMENDED</button>
                                     </div>
                                     <img src="./images/product-image-62-346x310 (1).jpg" class="card-img-top" alt="...">
-        
+
                                     <div class="product-wish">
                                         <div class="product-circle">
                                             <i class="fa-solid fa-maximize"></i>
                                         </div>
-        
+
                                         <div class="product-circle mt-1">
                                             <i class="fa-regular fa-heart"></i>
                                         </div>
                                     </div>
-        
+
                                     <div class="card-body">
                                         <a href="#" class="text-decoration-none text-dark">
                                             <p class="card-text">All Natural Italian-Style Chicken Meatballs</p>
@@ -511,26 +746,27 @@
                                         </div>
                                         <span class="d-block mb-3"> <del class="text-secondary ">$9.35 </del> <b
                                                 class="text-danger ms-2">$7.25</b> </span>
-                                        <button type="button" class=" rounded-pill btn btn-primary op-1 btn-sm w-100">Read  more</button>
+                                        <button type="button"
+                                            class=" rounded-pill btn btn-primary op-1 btn-sm w-100">Read more</button>
                                     </div>
                                 </div>
-    
+
                                 <div class="card" style="width: 15rem; position: relative;">
                                     <div class="product-badges" style="position: absolute;">
                                         <button type="button" class="btn btn-info btn-sm ">24%</button>
                                     </div>
                                     <img src="./images/product-image-60-150x150.jpg" class="card-img-top" alt="...">
-        
+
                                     <div class="product-wish">
                                         <div class="product-circle">
                                             <i class="fa-solid fa-maximize"></i>
                                         </div>
-        
+
                                         <div class="product-circle mt-1">
                                             <i class="fa-regular fa-heart"></i>
                                         </div>
                                     </div>
-        
+
                                     <div class="card-body">
                                         <a href="#" class="text-decoration-none text-dark">
                                             <p class="card-text">Angie’s Boomchickapop Sweet & Salty Kettle Corn</p>
@@ -545,30 +781,31 @@
                                         </div>
                                         <span class="d-block mb-3"> <del class="text-secondary ">$4.29</del> <b
                                                 class="text-danger ms-2"> $3.29</b> </span>
-                                        <button type="button" class=" rounded-pill btn btn-primary op-1 btn-sm w-100">Add to card</button>
+                                        <button type="button"
+                                            class=" rounded-pill btn btn-primary op-1 btn-sm w-100">Add to card</button>
                                     </div>
                                 </div>
-    
+
                                 <div class="card" style="width: 15rem; position: relative;">
                                     <div class="product-badges" style="position: absolute;">
                                         <button type="button" class="btn btn-info btn-sm ">19%</button>
                                         <button type="button" id="organic-color"
-                                        class="rounded-pill btn btn-success btn-sm d-block mt-1"><code
-                                            class="text-success">ORGANIC</code>
-                                    </button>
+                                            class="rounded-pill btn btn-success btn-sm d-block mt-1"><code
+                                                class="text-success">ORGANIC</code>
+                                        </button>
                                     </div>
                                     <img src="./images/product-image-46-346x310 (1).jpg" class="card-img-top" alt="...">
-        
+
                                     <div class="product-wish">
                                         <div class="product-circle">
                                             <i class="fa-solid fa-maximize"></i>
                                         </div>
-        
+
                                         <div class="product-circle mt-1">
                                             <i class="fa-regular fa-heart"></i>
                                         </div>
                                     </div>
-        
+
                                     <div class="card-body">
                                         <a href="#" class="text-decoration-none text-dark">
                                             <p class="card-text">Field Roast Chao Cheese Creamy Original</p>
@@ -583,24 +820,25 @@
                                         </div>
                                         <span class="d-block mb-3"> <del class="text-secondary ">$24.00 </del> <b
                                                 class="text-danger ms-2">$19.50</b> </span>
-                                        <button type="button" class=" rounded-pill btn btn-primary op-1 btn-sm w-100">Add to card</button>
+                                        <button type="button"
+                                            class=" rounded-pill btn btn-primary op-1 btn-sm w-100">Add to card</button>
                                     </div>
                                 </div>
-    
+
                                 <div class="card" style="width: 15rem; position: relative;">
 
                                     <img src="./images/product-image-45-346x310 (1).jpg" class="card-img-top" alt="...">
-        
+
                                     <div class="product-wish">
                                         <div class="product-circle">
                                             <i class="fa-solid fa-maximize"></i>
                                         </div>
-        
+
                                         <div class="product-circle mt-1">
                                             <i class="fa-regular fa-heart"></i>
                                         </div>
                                     </div>
-        
+
                                     <div class="card-body">
                                         <a href="#" class="text-decoration-none text-dark">
                                             <p class="card-text">Foster Farms Takeout Crispy Classic Buffalo</p>
@@ -613,8 +851,11 @@
                                             <i class="fa-solid fa-star text-warning"></i>
                                             <i class="fa-solid fa-star text-secondary"></i> <span>1</span>
                                         </div>
-                                        <span class="d-block mb-3"> <b class="text-danger ms-2">$7.25 – $49.99</b> </span>
-                                        <button type="button" class=" rounded-pill btn btn-primary op-1 btn-sm w-100">View products</button>
+                                        <span class="d-block mb-3"> <b class="text-danger ms-2">$7.25 – $49.99</b>
+                                        </span>
+                                        <button type="button"
+                                            class=" rounded-pill btn btn-primary op-1 btn-sm w-100">View
+                                            products</button>
                                     </div>
                                 </div>
                             </div>
@@ -624,22 +865,22 @@
                                     <div class="product-badges" style="position: absolute;">
                                         <button type="button" class="btn btn-info btn-sm ">10%</button>
                                         <button type="button" id="organic-color"
-                                        class="rounded-pill btn btn-success btn-sm d-block mt-1"><code
-                                            class="text-success">ORGANIC</code>
-                                    </button>
+                                            class="rounded-pill btn btn-success btn-sm d-block mt-1"><code
+                                                class="text-success">ORGANIC</code>
+                                        </button>
                                     </div>
                                     <img src="./images/product-image-59-346x310.jpg" class="card-img-top" alt="...">
-        
+
                                     <div class="product-wish">
                                         <div class="product-circle">
                                             <i class="fa-solid fa-maximize"></i>
                                         </div>
-        
+
                                         <div class="product-circle mt-1">
                                             <i class="fa-regular fa-heart"></i>
                                         </div>
                                     </div>
-        
+
                                     <div class="card-body">
                                         <a href="#" class="text-decoration-none text-dark">
                                             <p class="card-text">Blue Diamond Almonds Lightly Salted</p>
@@ -654,26 +895,27 @@
                                         </div>
                                         <span class="d-block mb-3"> <del class="text-secondary ">$11.68</del> <b
                                                 class="text-danger ms-2"> $10.58</b> </span>
-                                        <button type="button" class=" rounded-pill btn btn-primary op-1 btn-sm w-100">Add to card</button>
+                                        <button type="button"
+                                            class=" rounded-pill btn btn-primary op-1 btn-sm w-100">Add to card</button>
                                     </div>
                                 </div>
-    
+
                                 <div class="card" style="width: 15rem; position: relative;">
                                     <div class="product-badges" style="position: absolute;">
                                         <button type="button" class="btn btn-info btn-sm ">12%</button>
                                     </div>
                                     <img src="./images/product-image-58-346x310.jpg" class="card-img-top" alt="...">
-        
+
                                     <div class="product-wish">
                                         <div class="product-circle">
                                             <i class="fa-solid fa-maximize"></i>
                                         </div>
-        
+
                                         <div class="product-circle mt-1">
                                             <i class="fa-regular fa-heart"></i>
                                         </div>
                                     </div>
-        
+
                                     <div class="card-body">
                                         <a href="#" class="text-decoration-none text-dark">
                                             <p class="card-text">Blueberries – 1 Pint Package</p>
@@ -688,34 +930,36 @@
                                         </div>
                                         <span class="d-block mb-3"> <del class="text-secondary ">$4.49</del> <b
                                                 class="text-danger ms-2"> $3.99</b> </span>
-                                        <button type="button" class=" rounded-pill btn btn-primary op-1 btn-sm w-100">Add to card</button>
+                                        <button type="button"
+                                            class=" rounded-pill btn btn-primary op-1 btn-sm w-100">Add to card</button>
                                     </div>
                                 </div>
-    
+
                                 <div class="card" style="width: 15rem; position: relative;">
                                     <div class="product-badges" style="position: absolute;">
                                         <button type="button" class="btn btn-info btn-sm ">29%</button>
                                         <button type="button" id="organic-color"
-                                        class="rounded-pill btn btn-success btn-sm d-block mt-1"><code
-                                            class="text-success">ORGANIC</code>
+                                            class="rounded-pill btn btn-success btn-sm d-block mt-1"><code
+                                                class="text-success">ORGANIC</code>
                                     </div>
                                     <img src="./images/product-image-57-346x310.jpg" class="card-img-top" alt="...">
-        
+
                                     <div class="product-wish">
                                         <div class="product-circle">
                                             <i class="fa-solid fa-maximize"></i>
                                         </div>
-        
+
                                         <div class="product-circle mt-1">
                                             <i class="fa-regular fa-heart"></i>
                                         </div>
                                     </div>
-        
+
                                     <div class="card-body">
                                         <a href="#" class="text-decoration-none text-dark">
                                             <p class="card-text">Fresh Organic Broccoli Crowns</p>
                                         </a><br>
-                                        <span class="text-success mb-2 stock d-block"> <span class="text-muted">1kq</span>   IN STOCK</span>
+                                        <span class="text-success mb-2 stock d-block"> <span
+                                                class="text-muted">1kq</span> IN STOCK</span>
                                         <div class="rating-stars mb-2">
                                             <i class="fa-solid fa-star text-warning"></i>
                                             <i class="fa-solid fa-star text-warning"></i>
@@ -725,32 +969,34 @@
                                         </div>
                                         <span class="d-block mb-3"> <del class="text-secondary ">$6.77</del> <b
                                                 class="text-danger ms-2"> $4.85</b> </span>
-                                        <button type="button" class=" rounded-pill btn btn-primary op-1 btn-sm w-100">Add to card</button>
+                                        <button type="button"
+                                            class=" rounded-pill btn btn-primary op-1 btn-sm w-100">Add to card</button>
                                     </div>
                                 </div>
-    
+
                                 <div class="card" style="width: 15rem; position: relative;">
                                     <div class="product-badges" style="position: absolute;">
                                         <button type="button" class="btn btn-info btn-sm ">19%</button>
                                         <button type="button" class="btn btn-recom btn-sm ">RECOMMENDED</button>
                                     </div>
                                     <img src="./images/product-image-50-346x310.jpg" class="card-img-top" alt="...">
-        
+
                                     <div class="product-wish">
                                         <div class="product-circle">
                                             <i class="fa-solid fa-maximize"></i>
                                         </div>
-        
+
                                         <div class="product-circle mt-1">
                                             <i class="fa-regular fa-heart"></i>
                                         </div>
                                     </div>
-        
+
                                     <div class="card-body">
                                         <a href="#" class="text-decoration-none text-dark">
                                             <p class="card-text">Chobani Complete Vanilla Greek Yogurt</p>
                                         </a> <br>
-                                        <span class="text-success stock mb-2 d-block"> <span class="text-muted">1kg</span> IN STOCK</span>
+                                        <span class="text-success stock mb-2 d-block"> <span
+                                                class="text-muted">1kg</span> IN STOCK</span>
                                         <div class="rating-stars mb-2">
                                             <i class="fa-solid fa-star text-warning"></i>
                                             <i class="fa-solid fa-star text-warning"></i>
@@ -760,7 +1006,8 @@
                                         </div>
                                         <span class="d-block mb-3"> <del class="text-secondary ">$5.49 </del> <b
                                                 class="text-danger ms-2">$4.49</b> </span>
-                                        <button type="button" class=" rounded-pill btn btn-primary op-1 btn-sm w-100">Add to card</button>
+                                        <button type="button"
+                                            class=" rounded-pill btn btn-primary op-1 btn-sm w-100">Add to card</button>
                                     </div>
                                 </div>
                             </div>
@@ -771,22 +1018,23 @@
                                         <button type="button" class="btn btn-info btn-sm ">21%</button>
                                     </div>
                                     <img src="./images/product-image-56-346x310.jpg" class="card-img-top" alt="...">
-        
+
                                     <div class="product-wish">
                                         <div class="product-circle">
                                             <i class="fa-solid fa-maximize"></i>
                                         </div>
-        
+
                                         <div class="product-circle mt-1">
                                             <i class="fa-regular fa-heart"></i>
                                         </div>
                                     </div>
-        
+
                                     <div class="card-body">
                                         <a href="#" class="text-decoration-none text-dark">
                                             <p class="card-text">Fresh Brown Coconut</p>
                                         </a><br>
-                                        <span class="text-success mb-2 stock d-block"><span class="text-muted">1kg</span> IN STOCK</span>
+                                        <span class="text-success mb-2 stock d-block"><span
+                                                class="text-muted">1kg</span> IN STOCK</span>
                                         <div class="rating-stars mb-2">
                                             <i class="fa-solid fa-star text-warning"></i>
                                             <i class="fa-solid fa-star text-warning"></i>
@@ -796,26 +1044,27 @@
                                         </div>
                                         <span class="d-block mb-3"> <del class="text-secondary ">$19.58 </del> <b
                                                 class="text-danger ms-2">$15.48</b> </span>
-                                        <button type="button" class=" rounded-pill btn btn-primary op-1 btn-sm w-100">Add to card</button>
+                                        <button type="button"
+                                            class=" rounded-pill btn btn-primary op-1 btn-sm w-100">Add to card</button>
                                     </div>
                                 </div>
-    
+
                                 <div class="card" style="width: 15rem; position: relative;">
                                     <div class="product-badges" style="position: absolute;">
                                         <button type="button" class="btn btn-info btn-sm ">61%</button>
                                     </div>
                                     <img src="./images/product-image-61-346x310.jpg" class="card-img-top" alt="...">
-        
+
                                     <div class="product-wish">
                                         <div class="product-circle">
                                             <i class="fa-solid fa-maximize"></i>
                                         </div>
-        
+
                                         <div class="product-circle mt-1">
                                             <i class="fa-regular fa-heart"></i>
                                         </div>
                                     </div>
-        
+
                                     <div class="card-body">
                                         <a href="#" class="text-decoration-none text-dark">
                                             <p class="card-text">American Cheese Singles</p>
@@ -830,24 +1079,25 @@
                                         </div>
                                         <span class="d-block mb-3"> <del class="text-secondary ">$8.29 </del> <b
                                                 class="text-danger ms-2">$3.29</b> </span>
-                                        <button type="button" class=" rounded-pill btn btn-primary op-1 btn-sm w-100">Add to card</button>
+                                        <button type="button"
+                                            class=" rounded-pill btn btn-primary op-1 btn-sm w-100">Add to card</button>
                                     </div>
                                 </div>
-    
+
                                 <div class="card" style="width: 15rem; position: relative;">
 
                                     <img src="./images/product-image-55-346x310.jpg" class="card-img-top" alt="...">
-        
+
                                     <div class="product-wish">
                                         <div class="product-circle">
                                             <i class="fa-solid fa-maximize"></i>
                                         </div>
-        
+
                                         <div class="product-circle mt-1">
                                             <i class="fa-regular fa-heart"></i>
                                         </div>
                                     </div>
-        
+
                                     <div class="card-body">
                                         <a href="#" class="text-decoration-none text-dark">
                                             <p class="card-text">100% Butter French Croissants</p>
@@ -861,26 +1111,27 @@
                                             <i class="fa-solid fa-star text-warning"></i> <span>1</span>
                                         </div>
                                         <span class="d-block mb-3"><b class="text-danger ms-2">$1.44</b> </span>
-                                        <button type="button" class=" rounded-pill btn btn-primary op-1 btn-sm w-100">Add to card</button>
+                                        <button type="button"
+                                            class=" rounded-pill btn btn-primary op-1 btn-sm w-100">Add to card</button>
                                     </div>
                                 </div>
-    
+
                                 <div class="card" style="width: 15rem; position: relative;">
                                     <div class="product-badges" style="position: absolute;">
                                         <button type="button" class="btn btn-info btn-sm ">41%</button>
                                     </div>
                                     <img src="./images/product-image-54-346x310.jpg" class="card-img-top" alt="...">
-        
+
                                     <div class="product-wish">
                                         <div class="product-circle">
                                             <i class="fa-solid fa-maximize"></i>
                                         </div>
-        
+
                                         <div class="product-circle mt-1">
                                             <i class="fa-regular fa-heart"></i>
                                         </div>
                                     </div>
-        
+
                                     <div class="card-body">
                                         <a href="#" class="text-decoration-none text-dark">
                                             <p class="card-text">Canada Dry Ginger Ale – 2 L Bottle</p>
@@ -895,32 +1146,33 @@
                                         </div>
                                         <span class="d-block mb-3"> <del class="text-secondary ">$7.95</del> <b
                                                 class="text-danger ms-2">$5.95</b> </span>
-                                        <button type="button" class=" rounded-pill btn btn-primary op-1 btn-sm w-100">Add to card</button>
+                                        <button type="button"
+                                            class=" rounded-pill btn btn-primary op-1 btn-sm w-100">Add to card</button>
                                     </div>
                                 </div>
                             </div>
-                       
 
-                            
+
+
                         </div>
 
                         <div class="shop-page-numbers d-flex mt-5 justify-content-center">
-                        <ul class="d-flex">
-                            <li class="text-light bg-info"><span>1</span></li>
-                            <li><span>2</span></li>
-                            <li><span>3</span></li>
-                            <li><span>4</span></li>
-                            <li><span>5</span></li>
-                            <li><span>6</span></li>
-                            <li><i class="fa-solid fa-arrow-right-long "></i></li>
-                        </ul>
+                            <ul class="d-flex">
+                                <li class="text-light bg-info"><span>1</span></li>
+                                <li><span>2</span></li>
+                                <li><span>3</span></li>
+                                <li><span>4</span></li>
+                                <li><span>5</span></li>
+                                <li><span>6</span></li>
+                                <li><i class="fa-solid fa-arrow-right-long "></i></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-     </main>
-            
+    </main>
+
     <footer>
 
         <div class="footer-subscribe bg-primary mb-2">
@@ -1236,9 +1488,9 @@
         </div>
     </footer-copyright>
 </body>
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script> -->
+    crossorigin="anonymous"></script>
 <script src="./script/shop.js"></script>
 
 </html>

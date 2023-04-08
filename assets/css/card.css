@@ -1,0 +1,88 @@
+.fa-plus{
+    cursor: zoom-in;
+    color: green;
+    position: relative;
+    right: 150px;
+}
+.fa-plus:hover{
+    font-size: 10px;
+}
+.fa-trash{
+    color: red;
+    position: relative;
+    font-size: 29px;
+    /* right: 150px;  */
+}
+.btn-removeAll{
+width: 140px;
+height: 40px;
+}
+#coupon{
+    height: 35px;
+   position: relative;
+   top: 3px;
+   outline: none;
+   border: none;
+   border-radius: 2px;
+   background-color: rgba(192, 192, 192, 0.212);
+}
+.fa-minus{
+    cursor: zoom-out;
+    color:cyan;
+
+}
+.fa-minus:hover{
+    font-size: 10px;
+}
+.mg-left{
+    margin-left: 120px;
+}
+.mg-div-left{
+    margin-left: 380px;
+    margin-bottom: 77px;
+}
+.table-card-header{
+    border: .2px solid;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.free-progress-bar{
+    width: 100%;
+    border: .4px solid;
+    height: 55px;
+}
+.klb-progress-bar{
+    width: 95%;
+    background-color: rgba(192, 192, 192, 0.349);
+}
+.card-totals{
+    border: .5px solid;
+    border-radius: 5px;
+    position: absolute;
+    width: 262px;
+    height: 434px;
+    right: 138px;
+    top: 400px;
+}
+.border-bottom{
+    border-bottom: .5px solid;
+}
+
+.f-l{
+    font-size: 14px;
+}
+.change-a{
+    text-decoration: none;
+    color: #2bbef9;
+}
+.change-a:hover{
+text-decoration: underline;
+}
+
+.font-b-l{
+    font-size: 20px;
+    font-weight: 600;
+}
+.marg-top{
+margin-top: 150px;
+}

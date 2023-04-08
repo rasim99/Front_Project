@@ -13,8 +13,8 @@ let cardTotals = document.querySelector(".card-totals");
 if (localStorage.getItem("basket") != null) {
     let basketArr = JSON.parse(localStorage.getItem("basket"))
     basketArr.forEach(product => {
-        table.classList.remove("d-none");
         basketFooter.classList.remove("d-none")
+        table.classList.remove("d-none");
         allItems.classList.remove("d-none")
         cardTotals.classList.remove("d-none")
         emptybasket.classList.add("d-none")
@@ -86,6 +86,9 @@ removeIcon.forEach(r => {
             localStorage.removeItem("basket")
             table.remove();
             totalPriceDiv.remove();
+            emptybasket.classList.remove("d-none");
+            allItems.classList.add("d-none")
+            cardTotals.classList.add("d-none")
             basketCount.innerText = "0"
         }
         this.parentNode.parentNode.remove();
